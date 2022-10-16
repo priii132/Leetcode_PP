@@ -1,6 +1,5 @@
 class Solution {
     public boolean buddyStrings(String s, String goal) {
-      
         if(s.length() == 1){
             return false;
         }
@@ -27,6 +26,7 @@ class Solution {
         }
         
         
+        //added for loop for couting 
         for(int i=0;i<s.length()-1;i++){    
             if(s.charAt(i)!=s.charAt(i+1)){
                 for(int j=i+1;j<s.length();j++){
